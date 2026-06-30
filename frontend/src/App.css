@@ -1,0 +1,169 @@
+.shelf-container {
+  padding: 30px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: #333;
+}
+
+.main-title {
+  color: #1a1a1a;
+  border-bottom: 2px solid #eaeaea;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+/* Split screen grid layout */
+.dashboard-layout {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+@media (max-width: 900px) {
+  .dashboard-layout { 
+    grid-template-columns: 1fr; 
+  }
+}
+
+/* Control Panel Forms */
+.tool-form {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #e1e1e1;
+  position: sticky;
+  top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  height: fit-content;
+}
+
+.form-group {
+  display: flex;
+  gap: 10px;
+}
+
+.form-group input, .tool-form textarea {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.resource-input-row {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.btn-add-resource {
+  background: #666;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-submit {
+  background: #0070dd;
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Dashboard Shelf Cards */
+.grid-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.tool-card {
+  border: 1px solid #e1e1e1;
+  border-radius: 8px;
+  padding: 20px;
+  background: white;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  position: relative;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.category-tag {
+  background: #eef2f7;
+  color: #475569;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.code-box {
+  background: #1e1e1e;
+  color: #9cdcfe;
+  padding: 10px;
+  border-radius: 4px;
+  font-family: monospace;
+  font-size: 13px;
+  margin: 12px 0;
+  white-space: pre-wrap;
+}
+
+.resource-links {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+
+.resource-link {
+  color: #0070dd;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.resource-link:hover {
+  text-decoration: underline;
+}
+
+/* Interaction Action Buttons */
+.card-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+  border-top: 1px solid #f0f0f0;
+  padding-top: 10px;
+  justify-content: flex-end;
+}
+
+.btn-edit {
+  background: #f1f5f9;
+  color: #334155;
+  border: 1px solid #cbd5e1;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-delete {
+  background: #ffebe9;
+  color: #d73a49;
+  border: 1px solid #ffc1c1;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
